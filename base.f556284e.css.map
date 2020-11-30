@@ -1,1 +1,0 @@
-{"version":3,"sources":["css/base.scss"],"names":[],"mappings":"AAEA,UAEE,QAAA,CACA,SAAA,CACA,kBAGF,UACE","file":"base.f556284e.css","sourceRoot":"../src","sourcesContent":["$daily-base: #374567;\n\nhtml,\nbody {\n  margin: 0;\n  padding: 0;\n  overflow-x: hidden;\n}\n\n.initTest{\n  color: $daily-base;\n}"]}
