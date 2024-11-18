@@ -1,4 +1,4 @@
-{# Template #}
+
 <!doctype html>
 <html lang="en">
 	<head>
@@ -7,9 +7,9 @@
 
 		<meta property="og:url" content="https://www.therivalrygame.com" />
 		<meta property="og:type" content="website" />
-		<meta property="og:site_name" content="{{ config.hed }}" />
-		<meta property="og:title" content="{{ config.hed }}" />
-		<meta property="og:description" content="{{ config.dek }}" />
+		<meta property="og:site_name" content="" />
+		<meta property="og:title" content="" />
+		<meta property="og:description" content="" />
 		<meta property="og:image" content="https://www.therivalrygame.com/socialcard.png" />
 		<meta property="og:locale" content="en_US" />
 
@@ -17,7 +17,7 @@
 		<meta name="twitter:site" content="@michigandaily" />
 		<meta name="twitter:creator" content="@michigandaily" />
 
-		<meta name="description" content="{{ config.dek }}" />
+		<meta name="description" content="" />
 
 		<link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
 		<link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png" />
@@ -25,7 +25,7 @@
 		<link rel="manifest" href="/site.webmanifest" />
 		<meta name="theme-color" content="#ffffff" />
 
-		<title>{{ config.hed }}</title>
+		<title></title>
 
 		<link rel="preconnect" href="https://i1.wp.com" crossorigin />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -81,27 +81,14 @@
 				--color-lantern: rgb(185, 54, 53);
 			}
 		</style>
-		<link rel="stylesheet" href="src/css/base.scss" type="text/css" charset="utf-8" />
-		{% if env == "production" %} {% if config.GA_MEASUREMENT_ID %}
-		<!-- Global site tag (gtag.js) - Google Analytics -->
-		<script
-			async
-			src="https://www.googletagmanager.com/gtag/js?id={{ config.GA_MEASUREMENT_ID }}"
-		></script>
-		<script>
-			window.dataLayer = window.dataLayer || [];
-			function gtag() {
-				dataLayer.push(arguments);
-			}
-			gtag('js', new Date());
-
-			gtag('config', '{{ config.GA_MEASUREMENT_ID }}');
-		</script>
-		{% endif %} {% endif %}
+		
+		  
+		<script type="module" crossorigin src="/assets/index-3e7234d4.js"></script>
+		<link rel="stylesheet" href="/assets/index-f11dc657.css">
 	</head>
 
 	<body>
 		<div id="root"></div>
-		<script type="module" src="/src/js/index.jsx"></script>
+		
 	</body>
 </html>
