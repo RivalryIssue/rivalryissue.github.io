@@ -67,11 +67,16 @@ h1 {
 
 #hero {
 	// padding-bottom: 5rem;
-	font-size: 3rem;
+	// font-size: 3rem;
 
 	@media screen and (max-width: 760px) {
-		font-size: 2rem;
+		// font-size: 2rem;
 	}
+}
+
+#hero-image {
+	width: 90vw;
+	height: auto;
 }
 
 #left-flag,
