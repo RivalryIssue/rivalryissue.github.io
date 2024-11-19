@@ -7,7 +7,7 @@ const DonationBar = ({ amount, color }) => {
 		maximumFractionDigits: 0
 	});
 
-	const goal = 10000;
+	const goal = 15000;
 	const percentage = (amount / goal) * 100;
 
 	return (
@@ -21,7 +21,7 @@ const DonationBar = ({ amount, color }) => {
 					height: 'fit-content'
 				}}
 			>
-				<div style={{ textAlign: 'center', marginBottom: '5px'}}>
+				<div style={{ textAlign: 'center', marginBottom: '5px' }}>
 					{formatter.format(amount)} out of {formatter.format(goal)} goal
 				</div>
 				<div
