@@ -18,10 +18,9 @@ const LandingPage = () => (
 			// }}
 			>
 				<img
+					id="hero-image"
 					src="/rivalry logo.svg"
 					alt="The Rivalry Edition Logo"
-					width="1300px"
-					height="auto"
 				/>
 			</div>
 			{/*
