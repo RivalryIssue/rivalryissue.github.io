@@ -23,7 +23,7 @@ const DonationButton = ({ school, lanternMoney, dailyMoney, isMobile }) => {
             <DonationBar organization='' amount={amount} color={color} />
             {school === "daily" ?
                 (<a
-                    href="https://myumi.ch/JwJ4w"
+                    href="https://maizeraise.umich.edu/michigan-daily-osu-lantern-rivalry-2025"
                     target="_blank"
                     rel="noreferrer"
                     className='donation-link'

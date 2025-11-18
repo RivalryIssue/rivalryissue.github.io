@@ -12,37 +12,13 @@ const LandingPage = () => (
 		>
 			<div
 				id="hero"
-			// style={{
-			// 	backgroundColor: 'white',
-			// 	padding: '1rem'
-			// }}
 			>
 				<img
 					id="hero-image"
-					src="/rivalry logo.svg"
+					src="rivalry-logo-2025-transparent.png"
 					alt="The Rivalry Edition Logo"
 				/>
 			</div>
-			{/*
-			<div id="left-flag" />
-			<div
-				id="hero"
-				style={{
-					backgroundColor: 'white',
-					padding: '1rem'
-				}}
-			>
-				<h1
-					style={{
-						margin: 0,
-						textAlign: 'center'
-					}}
-				>
-					The Rivalry Edition
-				</h1>
-			</div>
-			<div id="right-flag" />
-			*/}
 		</div>
 		<div id="logos">
 			<a
@@ -75,27 +51,6 @@ const LandingPage = () => (
 			}}
 		>
 		</div>
-		{
-			/*
-
-		<div id="lantern-icon">
-			<img
-				alt="Ohio State football player running"
-				srcSet="https://i1.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Rivalry_Logo_Sketches_3-copy.png?w=300 300w, https://i1.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Rivalry_Logo_Sketches_3-copy.png?w=500 500w"
-				sizes="(max-width: 447px) 130px, (max-width: 560px) 200px, (max-width: 1200px) 250px, 300px"
-				src="https://i1.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Rivalry_Logo_Sketches_3-copy.png?w=500"
-			/>
-		</div>
-		<div id="daily-icon">
-			<img
-				alt="University of Michigan football player running"
-				srcSet="https://i1.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Rivalry_Logo_Sketches_3-1.png?w=300 300w, https://i1.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Rivalry_Logo_Sketches_3-1.png?w=500 500w"
-				sizes="(max-width: 447px) 130px, (max-width: 560px) 200px, (max-width: 1200px) 250px, 300px"
-				src="https://i1.wp.com/www.michigandaily.com/wp-content/uploads/2023/10/Rivalry_Logo_Sketches_3-1.png?w=500"
-			/>
-		</div>
-			*/
-		}
 		<a href="#main" type="button" className="chevron" aria-label="Scroll down">
 			<svg aria-hidden="true" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
 				{/* Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. */}
