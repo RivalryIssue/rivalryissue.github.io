@@ -1,8 +1,27 @@
 import PropTypes from 'prop-types';
 import ArticleCard from './ArticleCard';
+import { useState, useEffect } from 'react';
 import '../../css/article.scss';
 
 const ArticleGrid = ({ data }) => {
+	function useIsMobile() {
+		const [isMobile, setIsMobile] = useState(
+			typeof window !== 'undefined' &&
+			window.matchMedia('(max-width: 768px)').matches
+		);
+
+		useEffect(() => {
+			const mql = window.matchMedia('(max-width: 768px)');
+			const handler = (e) => setIsMobile(e.matches);
+			mql.addEventListener('change', handler);
+			return () => mql.removeEventListener('change', handler);
+		}, []);
+
+		return isMobile;
+	}
+
+	const isMobile = useIsMobile();
+
 	const interweave = (a, b) => {
 		const min = Math.min(a.length, b.length);
 		return Array(...Array(min))
@@ -13,12 +32,12 @@ const ArticleGrid = ({ data }) => {
 			.concat((a.length > min ? a : b).slice(min));
 	};
 
-	// const getAllData = () => {
-	// 	const articles = data.filter((d) => d['Story Link']);
-	// 	const um = articles.filter((d) => d.Publication === 'The Michigan Daily');
-	// 	const osu = articles.filter((d) => d.Publication === 'The Lantern');
-	// 	return interweave(um, osu);
-	// };
+	const getAllData = () => {
+		const articles = data.filter((d) => d['Story Link']);
+		const um = articles.filter((d) => d.Publication === 'The Michigan Daily');
+		const osu = articles.filter((d) => d.Publication === 'The Lantern');
+		return interweave(um, osu);
+	};
 
 	const articles = data.filter((d) => d['Story Link']);
 	const um = articles.filter((d) => d.Publication === 'The Michigan Daily');
@@ -27,22 +46,27 @@ const ArticleGrid = ({ data }) => {
 
 	return (
 		<div className="container">
-			<div className="article-grid">
-				{/* {getAllData().map((d, i) => (
-					<ArticleCard key={`${d.Publication}-${d['Story Link']}`} data={d} count={i} />
-				))} */}
-				<div className="um-col">
-					{um.map((a, i) => (
-						<ArticleCard key={`${a.Publication}-${a['Story Link']}`} data={a} count={i}/>
+			{isMobile ? (
+				<div className="article-grid">
+					{getAllData().map((d, i) => (
+						<ArticleCard key={`${d.Publication}-${d['Story Link']}`} data={d} count={i} />
 					))}
 				</div>
+			):(
+				<div className="article-grid">
+					<div className="um-col">
+						{um.map((a, i) => (
+							<ArticleCard key={`${a.Publication}-${a['Story Link']}`} data={a} count={i}/>
+						))}
+					</div>
 
-				<div className="osu-col">
-					{osu.map((a, i) => (
-						<ArticleCard key={`${a.Publication}-${a['Story Link']}`} data={a} count={i}/>
-					))}
+					<div className="osu-col">
+						{osu.map((a, i) => (
+							<ArticleCard key={`${a.Publication}-${a['Story Link']}`} data={a} count={i}/>
+						))}
+					</div>
 				</div>
-			</div>
+			)}
 		</div>
 	);
 };
