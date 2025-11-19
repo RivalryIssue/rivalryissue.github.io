@@ -74,8 +74,18 @@ body {
 }
 
 .article-grid {
-	display: flex;
-	flex-wrap: wrap;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	gap: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.um-col,
+.osu-col {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .graphic-container {
