@@ -34,7 +34,7 @@ const DonationButton = ({ school, lanternMoney, dailyMoney, isMobile }) => {
                     </div>
                 </a>)
                 :
-                (<a href="https://buckeyefunder.osu.edu/project/43286" target="_blank" rel="noreferrer"
+                (<a href="https://buckeyefunder.osu.edu/project/48355" target="_blank" rel="noreferrer"
                     style={{ color: color }} className='donation-link'>
                     <div className="donation-link-button">
                         Click to Give
