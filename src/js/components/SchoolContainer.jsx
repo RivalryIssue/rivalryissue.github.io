@@ -11,8 +11,7 @@ const SchoolContainer = () => {
 	const [selectedSchool, setSelectedSchool] = useState('');
 	const [lanternMoney, setLanternMoney] = useState(0);
 	const [dailyMoney, setDailyMoney] = useState(0);
-	// TODO: Update the json to use 2024.json.
-	// The lambda should be changed as well.
+	
 	useEffect(() => {
 		fetch('https://s3.us-east-2.amazonaws.com/stash.michigandaily.com/rivalry-edition-donations/2025.json')
 			.then((response) => response.json())

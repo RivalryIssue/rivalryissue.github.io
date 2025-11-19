@@ -4,13 +4,13 @@
 	"fetch": [
 		{
 			"type": "doc",
-			"id": "1Zq8M_xJ1Uhrn3Ha2WRNudL8PTWLWWDKP5QkTfcsbZIg",
+			"id": "1ptd1xTvDTuOl7n4tuDO0TWjOArqoEcXZuVxj9GvuBO8",
 			"output": "./src/data/copy.json",
 			"auth": "~/.daily-google-services.json"
 		},
 		{
 			"type": "sheet",
-			"id": "1iBFrygiNaqtcUv96LBUrQ0cg5vV2web1916EOqQ67dY",
+			"id": "1R_ijvDT-7-sV4ofbGmDj-3HdCgT_YVoZAHoQPdz05gM",
 			"sheetId": "0",
 			"output": "./src/data/data.csv",
 			"auth": "~/.daily-google-services.json"
