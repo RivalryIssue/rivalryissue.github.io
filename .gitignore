@@ -26,3 +26,4 @@ dist-ssr
 
 # Data files
 src/data
+node_modules/
