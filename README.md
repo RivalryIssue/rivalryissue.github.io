@@ -1,3 +1,14 @@
+# The Rivalry Edition
+[The Rivalry Edition](https://www.therivalrygame.com/) is an annual collaboration between The Michigan Daily and Ohio State’s student newspaper, The Lantern. Each year leading up to the Michigan vs. OSU football game, each school’s respective newspaper publishes a set of football related articles to be featured on the site. It is both a joint publication and a competitive fundraiser — the goal is to channel competitive spirit into money raised for each school’s student publication.
+
+## How to Deploy
+The Rivalry Edition is served using Github Pages. The most recent version is always found in the [rivalryissue.github.io](https://github.com/RivalryIssue/rivalryissue.github.io) repository. Source code is stored on the `main` branch, while only the contents of the build directory (`dist/`) are stored on the `gh-pages` branch. Changes to the site are automatically deployed when new changes are pushed to `gh-pages`.
+
+Steps to deploy:
+1. Push all changes to branch `origin/main`.
+2. Run `npm run build` to generate the build directory `dist/`.
+3. Run `npm run deploy`. This script pushes the build directory contents to branch `gh-pages`. It may take up to 10 minutes for all checks to pass and to see changes reflected.
+
 # sourdough
 
 Sourdough is the _starter_ (get it?) for web apps at The Michigan Daily.
