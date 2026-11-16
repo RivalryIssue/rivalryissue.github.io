@@ -23,7 +23,7 @@ const DonationButton = ({ school, lanternMoney, dailyMoney, isMobile }) => {
             <DonationBar organization='' amount={amount} color={color} />
             {school === "daily" ?
                 (<a
-                    href="https://maizeraise.umich.edu/michigan-daily-osu-lantern-rivalry-2025"
+                    href="https://maizeraise.umich.edu/michigan-daily-osu-lantern-rivalry-2026"
                     target="_blank"
                     rel="noreferrer"
                     className='donation-link'
@@ -34,7 +34,7 @@ const DonationButton = ({ school, lanternMoney, dailyMoney, isMobile }) => {
                     </div>
                 </a>)
                 :
-                (<a href="https://buckeyefunder.osu.edu/project/48355" target="_blank" rel="noreferrer"
+                (<a href="https://buckeyefunder.osu.edu/project/50040" target="_blank" rel="noreferrer"
                     style={{ color: color }} className='donation-link'>
                     <div className="donation-link-button">
                         Click to Give

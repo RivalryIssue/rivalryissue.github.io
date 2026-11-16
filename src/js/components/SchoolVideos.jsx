@@ -18,7 +18,7 @@ const SchoolVideos = ({ school, isMobile, lanternMoney, dailyMoney }) => {
 						<div className="schoolVideo">
 							<p className="schoolName">The Michigan Daily</p>
 							<div className="player-wrapper">
-								<lite-youtube key={"daily"} videoid="5lIppTg2GBs" playlabel="Michigan Daily Rivalry Edition 2025" />
+								<lite-youtube key={"daily"} videoid="uKH7Z3-Jrz4" playlabel="Michigan Daily Rivalry Edition 2026" />
 							</div>
 							<DonationButton school={"daily"} lanternMoney={lanternMoney} dailyMoney={dailyMoney} isMobile={isMobile} />
 						</div>
@@ -34,8 +34,8 @@ const SchoolVideos = ({ school, isMobile, lanternMoney, dailyMoney }) => {
 							<div className="player-wrapper">
 								<lite-youtube
 									key={"lantern"}
-									videoid="-Y_j-oW-xcs"
-									playlabel="The Lantern vs. Michigan Daily Rivalry 2024"
+									videoid="r-rTUbEd9rI"
+									playlabel="The Lantern vs. Michigan Daily Rivalry 2026"
 								/>
 							</div>
 							<DonationButton school={"lantern"} lanternMoney={lanternMoney} dailyMoney={dailyMoney} isMobile={isMobile} />
