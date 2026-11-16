@@ -7,7 +7,7 @@ const DonationBar = ({ amount, color }) => {
 		maximumFractionDigits: 0
 	});
 
-	const goal = 15000;
+	const goal = 10000;
 	const percentage = (amount / goal) * 100;
 
 	return (
